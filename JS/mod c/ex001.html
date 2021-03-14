@@ -5,10 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            background-color: blueviolet;
+            color: #fff;
+            font: normal 18pt Arial;
+        }
+    </style>
 </head>
 <body>
 
-    <h1> hi </h1>
+    <h1> Iniciando estudos em DOM </h1>
+    <p> Aqui vai o <strong> resultado </strong></p>
+    <p> suco de <strong> manga </strong></p>
+    <div id='btn'>clique em mim</div>
+    <div name='ade'> alegria </div>
+    <div class='ada'> craudia </div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p') [1]
+        window.document.write('Esta escrito: ' + p1.innerText)
+        p1.style.color = 'red'
+
+        var b = window.document.getElementById('btn')
+        b.style.background = 'green'
+
+        var d = window.document.getElementsByName('ade')[0]
+        d.style.color='red'
+
+        var c= window.document.querySelector('div.ada')
+        c.style.background ='blue'
+
+
+    </script>
     
 </body>
 </html>
